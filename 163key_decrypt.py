@@ -5,30 +5,8 @@
 解码流程：163key→Base64解码→AES-128-ECB解密→json代码
 '''
 from Crypto.Cipher import AES
-from binascii import b2a_hex, a2b_hex
 import base64
 import os
-'''
-def add_to_16(text):
-    if len(text.encode('utf-8')) % 16:
-        add = 16 - (len(text.encode('utf-8')) % 16)
-    else:
-        add = 0
-    text = text + ('\0' * add)
-    return text.encode('utf-8')
-'''
-'''
-# 加密函数
-def encrypt(data):
-    key = '#14ljk_!\]&0U<\'('.encode('utf-8')
-    mode = AES.MODE_ECB
-    #text = add_to_16(text)
-    cryptos = AES.new(key, mode)
-
-    ecdata = cryptos.encrypt(data)
-    return ecdata
-'''
-
 
 # 解密
 def decrypt(data):
