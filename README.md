@@ -7,5 +7,5 @@
 
 本代码依赖pycryptodome运行，可在操作系统终端输入以下命令安装pycryptodome：  
 ```
-pip3 insatll pycryptodome
+pip3 install pycryptodome
 ```
